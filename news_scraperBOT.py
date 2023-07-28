@@ -56,8 +56,10 @@ if __name__ == "__main__":
     NEWS_SITE: str = "https://www.hindustantimes.com/";
     HEADLINES_DIR: str = "./docs/headlines/"
     CAPTURE_FILENAME: str = "Headlines";
+    DRIVER_PATH: str = "./drivers/FirefoxDriver/geckodriver";
+    LOGFILES_PATH: str = "./logs/geckodriver.log";
 
-    driver = FirefoxInit("./driver/geckodriver", "./logs/geckodriver.log");
+    driver = FirefoxInit(DRIVER_PATH, LOGFILES_PATH);
 
     OpenSite(driver, NEWS_SITE);
 
