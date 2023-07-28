@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
+from datetime import datetime
 
 def FirefoxInit(binaryPath: str, logFilePath: str) -> webdriver.firefox.webdriver.WebDriver:
     service = Service(
@@ -42,14 +43,19 @@ def PrintNewsHeadlines(title: str="", headlines: list=[]) -> None:
         print("HEADLINE [%d]: %s"%(i+1, element.text));
         print("_"*10);
 
-def StoreHeadlines(filePath: str, headlines: list) -> None:
-    file = open(filePath, "w+");
+def StoreHeadlines(filePath: str, fileName: str, headlines: list) -> None:
+    currentDateTime = datetime.now();
+    filePath += "%s[%s].txt"%(fileName, currentDateTime);
+
+    file = open(filePath, "w");
     for element in headlines:
         file.write("%s\n"%element.text);
     file.close();
 
 if __name__ == "__main__":
     NEWS_SITE: str = "https://www.hindustantimes.com/";
+    HEADLINES_DIR: str = "./docs/headlines/"
+    CAPTURE_FILENAME: str = "Headlines";
 
     driver = FirefoxInit("./driver/geckodriver", "./logs/geckodriver.log");
 
@@ -63,5 +69,5 @@ if __name__ == "__main__":
 
     PrintNewsHeadlines("TOP HEADLINES", headlines);
 
-    StoreHeadlines("./news_scraping/headlines.txt", headlines);
+    StoreHeadlines(HEADLINES_DIR, CAPTURE_FILENAME, headlines);
     CloseDriver(driver);
