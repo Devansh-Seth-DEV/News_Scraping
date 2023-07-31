@@ -8,8 +8,7 @@ Users can then process the HTML code of the webpage to extract data and carry ou
 <br>
 
 ### Project Description:
-In this project , Web Browser will be accessed with Selenium. News has to be fetched from the browser & printed [ from the specifiesource eg- Hindustan Times ],
-then converting the news text into speech & saving it into audio file
+In this project , Web Browser will be accessed with Selenium. News has to be fetched from the browser & printed [ from the specifiesource eg- Hindustan Times ] the headlines and also save it in a text file, also converting the news headlines into speech using Google-Text-To-Speech & saving it into audio file (mp3)
 
 Designed for [Linux](https://www.linux.org/). *Not yet tested on [Windows](https://www.microsoft.com/en-in) and [macOS!](https://support.apple.com/en-in/macos)*
 <br><br>
