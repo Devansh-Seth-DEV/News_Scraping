@@ -102,20 +102,16 @@ if __name__ == "__main__":
     OpenSite(driver, NEWS_SITE);
 
     newsContainer = LocateElementFromDriver(driver, By.ID, "topnews");
-
     headLinesContainer = LocateElement(newsContainer, By.CLASS_NAME, "htImpressionTracking");
-
     headlines = LocateElements(headLinesContainer, By.CSS_SELECTOR, "h3.hdg3");
 
     print();
     PrintNewsHeadlines("TOP HEADLINES", headlines);
 
-    print();
-    print("Generating text file of headlines...");
+    print("\nGenerating text file of headlines...");
     StoreHeadlines(HEADLINES_DIR, CAPTURE_FILENAME, headlines);
 
-    print();
-    print("Initiating Process: Text-To-Speech Converstion");
+    print("\nInitiating Process: Text-To-Speech Converstion");
     GoogleTTS(headlines, "en", "headline", AUDIODIR_PATH);
 
     print("\nClosing the firefox driver and calls ...");
