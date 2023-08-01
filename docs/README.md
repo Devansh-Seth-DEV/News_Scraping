@@ -7,7 +7,9 @@ Unlike screen scraping, web scraping extracts the HTML code under the webpage.
 Users can then process the HTML code of the webpage to extract data and carry out data cleaning, manipulation, and analysis
 <br>
 
-### Project Description:
+Project Description
+---
+
 In this project , Web Browser will be accessed with Selenium. News has to be fetched from the browser & printed [ from the specifiesource eg- Hindustan Times ] the headlines and also save it in a text file, also converting the news headlines into speech using Google-Text-To-Speech & saving it into audio file (mp3)
 
 Designed for [Linux](https://www.linux.org/). *Not yet tested on [Windows](https://www.microsoft.com/en-in) and [macOS!](https://support.apple.com/en-in/macos)*
@@ -21,7 +23,8 @@ STEP1: Clone this repository
 ~$ git clone https://github.com/Devansh-Seth-DEV/News_Scraping.git
 ```
 
-STEP2: Create a virtual environment by <br>
+STEP2: Create a virtual environment
+
 > Open your favourite Terminnal
 
 ```bash
@@ -44,6 +47,7 @@ STEP4: Give permissions to firefox driver
 
 Install Selenium and gTTS (Google-Text-To-Speech)
 ---
+
 > Assuming that the virtual environment is activated
 
 ```bash
@@ -54,6 +58,7 @@ Install Selenium and gTTS (Google-Text-To-Speech)
 
 RUN
 ---
+
 > Assuming that the virtual environment is activated
 
 ```bash
@@ -62,6 +67,7 @@ RUN
 
 OUTPUT
 ---
+
 News Text-Files Directory
 
 ```bash
