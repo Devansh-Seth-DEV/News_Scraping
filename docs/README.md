@@ -15,31 +15,38 @@ Designed for [Linux](https://www.linux.org/). *Not yet tested on [Windows](https
 
 Installation
 ---
-STEP1: Clone this repository by
-`git clone https://github.com/Devansh-Seth-DEV/News_Scraping.git`
+STEP1: Clone this repository
+
+```bash
+~$ git clone https://github.com/Devansh-Seth-DEV/News_Scraping.git
+```
 
 STEP2: Create a virtual environment by <br>
 > Open your favourite Terminnal
-```
+
+```bash
 ~$ cd <path to cloned repository> ...
 News_Scraping:~$ pip3 install virtualenv
 News_Scraping:~$ virtualenv venv_name
 ```
 
 STEP3: Activate virtual environment
-```
+
+```bash
 News_Scraping:~$ source venv_name/bin/activate
 ```
 
 STEP4: Give permissions to firefox driver
-```
+
+```bash
 (venv_name) News_Scraping:~$ chmod +x drivers/FirefoxDriver/geckodriver
 ```
 
 Install Selenium and gTTS (Google-Text-To-Speech)
 ---
 > Assuming that the virtual environment is activated
-```
+
+```bash
 (venv_name) News_Scraping:~$ pip3 install selenium
 (venv_name) News_Scraping:~$ pip3 install webdriver-manager
 (venv_name) News_Scraping:~$ pip3 install gTTS
@@ -47,24 +54,28 @@ Install Selenium and gTTS (Google-Text-To-Speech)
 
 RUN
 ---
-> Assuming that the virtual environment is activated <br>
-```
+> Assuming that the virtual environment is activated
+
+```bash
 (venv_name) News_Scraping:~$ python3 news_scraperBOT.py
 ```
 
 OUTPUT
 ---
 News Text-Files Directory
-```
+
+```bash
 (venv_name) News_Scraping:~$ cd ./docs/headlines
 ```
-News-Text Audio Directory: 
-```
+News-Text Audio Directory
+
+```bash
 (venv_name) News_Scraping:~$ cd ./audio/
 ```
 
 Deactivating Virtual Environment
 ---
-```
+
+```bash
 (venv_name) News_Scraping:~$ deactivate
 ```
