@@ -28,21 +28,21 @@ STEP2: Create a virtual environment
 > Open your favourite Terminnal
 
 ```bash
-~$ cd <path to cloned repository> ...
+~$ cd <path to cloned repository> /News_Scraping
 News_Scraping:~$ pip3 install virtualenv
-News_Scraping:~$ virtualenv venv_name
+News_Scraping:~$ virtualenv <venv_name>
 ```
 
 STEP3: Activate virtual environment
 
 ```bash
-News_Scraping:~$ source venv_name/bin/activate
+News_Scraping:~$ source <venv_name>/bin/activate
 ```
 
 STEP4: Give permissions to firefox driver
 
 ```bash
-(venv_name) News_Scraping:~$ chmod +x drivers/FirefoxDriver/geckodriver
+(<venv_name>) News_Scraping:~$ chmod +x drivers/FirefoxDriver/geckodriver
 ```
 
 Install Selenium and gTTS (Google-Text-To-Speech)
@@ -51,9 +51,9 @@ Install Selenium and gTTS (Google-Text-To-Speech)
 > Assuming that the virtual environment is activated
 
 ```bash
-(venv_name) News_Scraping:~$ pip3 install selenium
-(venv_name) News_Scraping:~$ pip3 install webdriver-manager
-(venv_name) News_Scraping:~$ pip3 install gTTS
+(<venv_name>) News_Scraping:~$ pip3 install selenium
+(<venv_name>) News_Scraping:~$ pip3 install webdriver-manager
+(<venv_name>) News_Scraping:~$ pip3 install gTTS
 ```
 
 RUN
@@ -62,7 +62,7 @@ RUN
 > Assuming that the virtual environment is activated
 
 ```bash
-(venv_name) News_Scraping:~$ python3 news_scraperBOT.py
+(<venv_name>) News_Scraping:~$ python3 news_scraperBOT.py
 ```
 
 OUTPUT
@@ -71,17 +71,17 @@ OUTPUT
 News Text-Files Directory
 
 ```bash
-(venv_name) News_Scraping:~$ cd ./docs/headlines
+(<venv_name>) News_Scraping:~$ cd ./docs/headlines
 ```
 News-Text Audio Directory
 
 ```bash
-(venv_name) News_Scraping:~$ cd ./audio/
+(<venv_name>) News_Scraping:~$ cd ./audio/
 ```
 
 Deactivating Virtual Environment
 ---
 
 ```bash
-(venv_name) News_Scraping:~$ deactivate
+(<venv_name>) News_Scraping:~$ deactivate
 ```
