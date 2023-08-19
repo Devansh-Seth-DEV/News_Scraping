@@ -79,7 +79,7 @@ def GoogleTTS(textsToSpeech: list[webdriver.remote.webdriver.WebDriver], lang: s
             print("ERROR: %s"%error);
             print();
 
-def PrintNewsHeadlines(title: str="", headlines: list=[]) -> None:
+def PrintNewsHeadlines(title: str="", headlines: list[webdriver.remote.webelement.WebElement]=[]) -> None:
     print("%s"%title);
     print("="*20);
     for i, element in enumerate(headlines):
